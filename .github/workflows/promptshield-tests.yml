@@ -29,3 +29,8 @@ jobs:
 
       - name: Validate runner rule listing
         run: python tools/promptshield_runner.py --list-rules --json
+cd /home/ubuntu/prompttoken
+
+git status --short --branch --untracked-files=all
+git diff -- README.md scripts/fetch-channel-videos.py scripts/test_fetch_channel_videos.py
+git diff --cached
